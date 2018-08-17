@@ -1,0 +1,18 @@
+PODS:
+  - CleverTap-iOS-SDK (3.1.7):
+    - CleverTap-iOS-SDK/Main (= 3.1.7)
+  - CleverTap-iOS-SDK/Main (3.1.7)
+
+DEPENDENCIES:
+  - CleverTap-iOS-SDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CleverTap-iOS-SDK
+
+SPEC CHECKSUMS:
+  CleverTap-iOS-SDK: 996a436d5acdc9dcfdb4f8ffb0fe5f4bb035ecc2
+
+PODFILE CHECKSUM: b7f96b62261bd8d12daf46206f61a5bf7a5a74b1
+
+COCOAPODS: 1.5.3

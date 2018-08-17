@@ -1,0 +1,8 @@
+rootProject.name = 'detox51'
+
+include ':app'
+
+include ':detox'
+project(':detox').projectDir = new File(rootProject.projectDir, '../node_modules/detox/android/detox')
+include ':clevertap-react-native'
+project(':clevertap-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/clevertap-react-native/android')

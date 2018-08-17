@@ -1,0 +1,35 @@
+{
+  "name": "detox51",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "clevertap-react-native": "^0.2.2",
+    "detox": "^8.1.6",
+    "react": "16.0.0",
+    "react-native": "0.51.0"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "^23.5.0",
+    "react-test-renderer": "16.0.0"
+  },
+  "detox": {
+    "configurations": {
+      "android.emu.debug": {
+        "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+        "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
+        "type": "android.emulator",
+        "name": "Nexus_5X_API_25"
+      }
+    },
+    "test-runner": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
